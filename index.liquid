@@ -3,5 +3,8 @@ layout: layout.liquid
 title: 11ty Boilerplate
 ---
 
-<h1>Yet Another 11ty <strong>Boilerplate</strong></h1>
-<img alt="pine" src="/images/pine.png" width="50" />
+<h2>Name Generator</h2>
+<div x-data="namePicker">
+    <h1>Current Name: <span x-text="showName"></span></h1>
+    <button class='btn btn-info' @click="pickName">Pick a Random Name</button>
+</div>
